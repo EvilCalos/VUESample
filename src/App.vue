@@ -6,20 +6,22 @@
     <ProductList/>
     <hr>
     <ShoppingCart/>
+    <Login />
   </div>
 </template>
 
 <script>
-import ProductList from './components/ProductList.vue'
-import ShoppingCart from './components/ShoppingCart.vue'
+import ProductList from "./components/ProductList.vue";
+import ShoppingCart from "./components/ShoppingCart.vue";
+import Login from "./components/Login.vue";
 export default {
-  components: { ProductList, ShoppingCart }
-}
+  components: { ProductList, ShoppingCart, Login }
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
