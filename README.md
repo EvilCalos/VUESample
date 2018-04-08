@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # vuemine
 
 > A Vue.js project
@@ -28,3 +29,6 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# VUESample
+>>>>>>> a286cb5e85e400a6c5e7602547796e5f0f355266
