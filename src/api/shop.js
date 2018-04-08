@@ -16,6 +16,7 @@ const user={
       setTimeout(() => cb(_products), 100)
     },
     login(guest,cb){
+      console.log(guest)
       setTimeout(()=>cb(user),1000)
     },
   

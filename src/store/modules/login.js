@@ -13,12 +13,12 @@ const getters={
 
 const actions={
 
-    login: ({commit,state},user)=>{
+    login: ({commit,state},guest)=>{
         return new Promise((resolve,reject)=>{
-            shop.login(state,user=>{
+            shop.login(guest,user=>{
                 console.log(user)
                 if(user.username==='shuntao'&&user.password==='123456'){
-                    commit('login',user.isLoggedIn)
+                    commit('userIsLoggedIn',user.isLoggedIn)
                     resolve(user)
                 }
             })

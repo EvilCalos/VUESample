@@ -19,7 +19,7 @@ export default {
     'login'
   ]),
   created () {
-    this.$store.dispatch('login',{username:'shuntao',password:'123456'})
+    this.$store.dispatch('login',{username:'calos',password:'123456'})
   }
 }
 </script>
