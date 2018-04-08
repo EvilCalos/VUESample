@@ -8,7 +8,8 @@ const _products = [
   ]
 const user={
   username:'shuntao',
-  password:'123456'
+  password:'123456',
+  isLoggedIn:true
 }
   
   export default {

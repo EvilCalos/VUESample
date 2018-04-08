@@ -18,7 +18,9 @@ const actions={
             shop.login(guest,user=>{
                 console.log(user)
                 if(user.username==='shuntao'&&user.password==='123456'){
-                    commit('userIsLoggedIn',user.isLoggedIn)
+                    console.log(user.isLoggedIn)
+                    const isLoggedIn=user.isLoggedIn
+                    commit('userIsLoggedIn',isLoggedIn)
                     resolve(user)
                 }
             })
@@ -28,7 +30,7 @@ const actions={
 
 const mutations={
 
-    userIsLoggedIn:({state},{isLoggedIn})=>{
+    userIsLoggedIn:(state,isLoggedIn)=>{
         state.isLoggedIn=isLoggedIn
     }
 }
