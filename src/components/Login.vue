@@ -21,6 +21,7 @@ export default {
   created () {
     this.$store.dispatch('login',{username:'calos',password:'123456'}).then((user)=>{
         console.log(111)
+        
         console.log(user)
     })
   }
