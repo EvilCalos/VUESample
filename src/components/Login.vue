@@ -1,9 +1,10 @@
 <template>
   
-<span>
+<div>
     LoginStatus is like:
-    {{userIsLoggedIn}}
-</span>
+    {{status}}
+
+</div>
 
 </template>
 
@@ -13,7 +14,8 @@
 import { mapGetters, mapActions } from 'vuex'
 export default {
   computed: mapGetters({
-    userIsLoggedIn: 'userIsLoggedIn'
+    view:'view',
+    status:"status"
   }),
   methods: mapActions([
     'login'

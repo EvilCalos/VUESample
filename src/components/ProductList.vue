@@ -7,22 +7,22 @@
         :disabled="!product.inventory"
         @click="addProductToCart(product)">
         Add to cart
-      </button>
+      </button><span>{{name}}</span>
     </li>
   </ul>
+  
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters, mapActions } from "vuex";
 export default {
   computed: mapGetters({
-    products: 'allProducts'
+    products: "allProducts",
+    name: "name"
   }),
-  methods: mapActions([
-    'addProductToCart'
-  ]),
-  created () {
-    this.$store.dispatch('getAllProducts')
+  methods: mapActions(["addProductToCart"]),
+  created() {
+    this.$store.dispatch("getAllProducts");
   }
-}
+};
 </script>

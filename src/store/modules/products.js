@@ -2,12 +2,14 @@ import shop from '../../api/shop'
 
 // initial state
 const state = {
-  all: []
+  all: [],
+  proname:'goods1'
 }
 
 // getters
 const getters = {
-  allProducts: state => state.all
+  allProducts: state => state.all,
+  name:state=>state.proname,
 }
 
 // actions
