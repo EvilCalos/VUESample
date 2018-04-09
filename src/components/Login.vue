@@ -14,13 +14,13 @@
 import { mapGetters, mapActions } from "vuex";
 export default {
   computed: mapGetters({
-    view: "view",
-    status: "status"
+    view: "login/view",
+    status: "login/status"
   }),
   methods: mapActions(["login"]),
   created() {
     this.$store
-      .dispatch("login", { username: "calos", password: "123456" })
+      .dispatch("login/login", { username: "calos", password: "123456" })
       .then(user => {
         console.log(111);
 
