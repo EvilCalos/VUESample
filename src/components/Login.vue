@@ -17,7 +17,8 @@ export default {
     view: "login/view",
     status: "login/status"
   }),
-  methods: mapActions(["login"]),
+  methods: {...mapActions(["login/login",]),
+  },
   created() {
     this.$store
       .dispatch("login/login", { username: "calos", password: "123456" })
