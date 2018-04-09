@@ -20,6 +20,7 @@ const actions = {
                 console.log(user)
                 if (user.username === 'shuntao' && user.password === '123456') {
                     console.log(user.isLoggedIn)
+                    Object.assign(state,user)
                     const isLoggedIn = user.isLoggedIn
                     commit('userIsLoggedIn', isLoggedIn)
                     resolve(user)
